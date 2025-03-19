@@ -1,0 +1,122 @@
+.projects-section {
+    padding: 50px 10%;
+    background-color: rgb(16, 13, 13); /* Black background */
+    color: white;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Adds spacing between cards */
+    row-gap: 50px; /* Vertical gap */
+  }
+  
+  .project-card {
+    background: #121212; /* Dark gray */
+    color: white;
+    width: 550px; /* Controlled width */
+    height: 350px; /* Reduced height */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: grayscale(100%) brightness(80%);
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 0, 127, 0.3);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(100%);
+    box-shadow: 0px 6px 15px rgba(255, 0, 127, 0.5);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 180px; /* Reduced image height */
+    object-fit: cover;
+  }
+  
+  .project-content {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 8px 0;
+    justify-content: center;
+  }
+  
+  .tag {
+    background: #ff007f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .projects-container {
+      gap: 30px;
+    }
+  
+    .project-card {
+      width: 340px;
+      height: 330px;
+    }
+  
+    .project-image img {
+      height: 160px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .project-card {
+      width: 90%;
+      height: 320px;
+    }
+  
+    .project-image img {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-container {
+      gap: 20px;
+    }
+  
+    .project-card {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .project-image img {
+      height: 140px;
+    }
+  
+    .projects-title {
+      font-size: 2rem;
+    }
+  }
+  

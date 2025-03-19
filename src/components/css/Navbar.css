@@ -1,0 +1,109 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Hide navbar items on small screens initially */
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.nav-links a:hover {
+    color: #00ff00;
+}
+
+/* Resume Button */
+.resume-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #ff007f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-right: 5rem;
+}
+
+.resume-btn:hover {
+    background-color: #ff007f;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+/* Mobile Menu */
+.nav-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-icon {
+        display: block;
+        margin-right: 25px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%; /* Initially hidden */
+        width: 30%; /* Takes only 30% of the screen */
+        background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+        backdrop-filter: blur(15px); /* Stronger blur effect */
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        transition: right 0.5s ease-in-out; /* Smooth slide-in transition */
+    }
+
+    .nav-links.active {
+        right: 0; /* Slide in */
+    }
+
+    .resume-item {
+        margin-top: 15px;
+    }
+
+    .resume-btn {
+        display: block;
+        margin: 10px auto;
+        width: 120px;
+        text-align: center;
+    }
+}
