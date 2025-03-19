@@ -23,44 +23,36 @@ const About = () => {
         <h2>Achievements</h2>
         <div className="achievements">
           <div className="achievement-card">
-            <h3>Smart India Hackathon ‘24 Finalist (Team Leader)</h3>
-            <p>Top 450 among 86000+ teams</p>
+            <h3>Inter-College Coding Competition Runner-Up</h3>
+            <p>Secured the runner-up position in a competitive inter-college coding fest</p>
             {/* <a href="#">Click to know more</a> */}
           </div>
 
           <div className="achievement-card highlight">
-            <h3>Startup Mahakumbh</h3>
-            <p>Participant - Startup Mahakumbh 2024 at Bharat Mandapam, New Delhi</p>
+            <h3>Successfully Completed Freelance Projects</h3>
+            <p>Delivered high-quality solutions tailored to client needs, ensuring responsiveness, performance, and user satisfaction.</p>
             {/* <a href="#">Click to know more</a> */}
           </div>
 
-          <div className="achievement-card">
-            <h3>First Runner Up - Yukti Innovation Challenge 2.0</h3>
-            <p>Fund grants of Rs.1,00,000</p>
-            {/* <a href="#">Click to know more</a> */}
-          </div>
+         
         </div>
 
         {/* Certifications */}
         <h2>Certifications</h2>
         <div className="certifications">
           <div className="cert-card">
-            <h3>Google</h3>
-            <p>Certified - Google Data Analytics Professional Certificate</p>
-            {/* <a href="#">Click to know more</a> */}
+            <h3>React JS</h3>
+            <p>React - The Complete Guide 2025 (incl. Next.js, Redux)</p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-2d0504c8-a429-4e4c-be47-5f0f78a6d911.jpg?v=1734608768000">Click to know more</a>
           </div>
 
           <div className="cert-card">
-            <h3>Cisco</h3>
-            <p>Certified by Cisco Networking Academy</p>
+            <h3>Python</h3>
+            <p>Python in AI</p>
             {/* <a href="#">Click to know more</a> */}
           </div>
 
-          <div className="cert-card">
-            <h3>Intel & FICE</h3>
-            <p>Certified - Internet of Things (IoT) Program</p>
-            {/* <a href="#">Click to know more</a> */}
-          </div>
+          
         </div>
       </div>
 

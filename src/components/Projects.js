@@ -3,52 +3,52 @@ import "./css/Projects.css";
 
 const projectsData = [
   {
-    title: "Network Next | N Square",
-    image: "https://www.shutterstock.com/image-vector/music-app-concept-flat-design-260nw-2509680861.jpg", // Replace with actual image path
-    tags: ["React", "Node JS", "MongoDB", "Express JS", "Python"],
+    title: "Music Application",
+    image: "https://i.pinimg.com/736x/eb/0d/c4/eb0dc43bf2d59b460469bb4f85653931.jpg", // Replace with actual image path
+    tags: ["React", "Node JS", "MongoDB", "Express JS"],
     description:
-      "A comprehensive Alumni Association Management System designed for universities to streamline communication and collaboration...",
-    link: "https://yourprojectlink1.com", // Replace with actual URL
+      "A feature-rich Music Streaming Application offering seamless audio playback, personalized playlists, and an immersive listening experience...",
+    link: "https://music-web-application-2.onrender.com/", // Replace with actual URL
   },
   {
-    title: "AI Virtual Technical Interview System",
-    image: "https://www.shutterstock.com/image-vector/music-app-concept-flat-design-260nw-2509680861.jpg", // Replace with actual image path
-    tags: ["React", "Node JS", "OpenAI GPT", "Python", "Groc"],
+    title: "E-Commerece App",
+    image: "https://www.quickeselling.com/wp-content/uploads/2019/08/Quickeselling-mobile-app-webstore-1-1.jpg", // Replace with actual image path
+    tags: ["React", "Node JS",  "MongoDB", "Express JS" ],
     description:
-      "An innovative platform that simulates technical interviews using AI-powered algorithms...",
-    link: "https://yourprojectlink2.com", // Replace with actual URL
+      "A seamless E-Commerce Website for secure shopping, personalized recommendations, and easy order management...",
+    link: "https://e-commerce-1-by30.onrender.com/", // Replace with actual URL
   },
   {
-    title: "AI Virtual Technical Interview System",
-    image: "https://www.shutterstock.com/image-vector/music-app-concept-flat-design-260nw-2509680861.jpg", // Replace with actual image path
-    tags: ["React", "Node JS", "OpenAI GPT", "Python", "Groc"],
+    title: "Quiz Application",
+    image: "https://img.freepik.com/premium-vector/template-mobile-application-interface-quiz-blue-background-test-questions_414360-2304.jpg", // Replace with actual image path
+    tags: ["React"],
     description:
-      "An innovative platform that simulates technical interviews using AI-powered algorithms...",
-    link: "https://yourprojectlink2.com", // Replace with actual URL
+      "A fun and interactive Quiz App with diverse questions, real-time scoring, and engaging challenges...",
+    link: "https://quiz-app-uqpf.onrender.com/", // Replace with actual URL
   },
   {
-    title: "AI Virtual Technical Interview System",
-    image: "https://www.shutterstock.com/image-vector/music-app-concept-flat-design-260nw-2509680861.jpg", // Replace with actual image path
-    tags: ["React", "Node JS", "OpenAI GPT", "Python", "Groc"],
+    title: "Tic-Tac-Toe",
+    image: "https://play-lh.googleusercontent.com/EUgRlCOH_jwtW39SaG7XeKq8pJsQfKkZB4MYED18npdsKeRZDmN9xVsSV3nbpoJGgIU=w526-h296-rw", // Replace with actual image path
+    tags: ["React"],
     description:
-      "An innovative platform that simulates technical interviews using AI-powered algorithms...",
-    link: "https://yourprojectlink2.com", // Replace with actual URL
+      "A simple and interactive Tic-Tac-Toe game with multiplayer support and smart AI opponents...",
+    link: "https://tic-tac-toe1-2iix.onrender.com/", // Replace with actual URL
   },
   {
-    title: "AI Virtual Technical Interview System",
-    image: "https://www.shutterstock.com/image-vector/music-app-concept-flat-design-260nw-2509680861.jpg", // Replace with actual image path
-    tags: ["React", "Node JS", "OpenAI GPT", "Python", "Groc"],
+    title: "Investment Calculater ",
+    image: "https://monomousumi.com/wp-content/uploads/invest-calculator-represents-return-investment-calculate-meaning-roi-46492629.jpg", // Replace with actual image path
+    tags: ["React"],
     description:
-      "An innovative platform that simulates technical interviews using AI-powered algorithms...",
-    link: "https://yourprojectlink2.com", // Replace with actual URL
+      "An Investment Calculator for estimating returns and tracking growth...",
+    link: "https://investment-calculator-dsjv.onrender.com/", // Replace with actual URL
   },
   {
-    title: "AI Virtual Technical Interview System",
-    image: "https://www.shutterstock.com/image-vector/music-app-concept-flat-design-260nw-2509680861.jpg", // Replace with actual image path
-    tags: ["React", "Node JS", "OpenAI GPT", "Python", "Groc"],
+    title: "Time Challenge Game",
+    image: "https://play-lh.googleusercontent.com/-GIdwYVwyLPh_KFjdcFbmz1wH_mxE0xVik6jLdvJ2c0N1thNKdoH8BpT_gabhin4TgI=w7680-h4320-rw", // Replace with actual image path
+    tags: ["React"],
     description:
-      "An innovative platform that simulates technical interviews using AI-powered algorithms...",
-    link: "https://yourprojectlink2.com", // Replace with actual URL
+      "A fast-paced Time Challenge Game testing speed and accuracy...",
+    link: "https://timer-challenge-game.onrender.com/", // Replace with actual URL
   },
 ];
 

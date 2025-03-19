@@ -17,16 +17,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px 10%;
+  /* padding: 50px 10%; */
   box-sizing: border-box;
   position: relative;
-  min-height: 50vh;
+  /* min-height: 50vh; */
+  
 }
 
 
-#about, #education, #projects, #contact {
+/* #about, #education, #projects, #contact {
   padding-top: 30px; 
-}
+} */
 
 /* Remove Extra Margin Between Sections */
 .section + .section {
