@@ -1,60 +1,147 @@
+/* Hero Section */
 .hero-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    overflow: hidden;
-    background-color: black;
-  }
-  
-  .threejs-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  .hero-content {
-    text-align: center;
-    z-index: 1;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Three.js Background */
+.threejs-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Content */
+.hero-content {
+  text-align: center;
+  z-index: 1;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+
+/* Subtext */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 2rem;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #00ff00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .profile-img {
-    width: 215px;
-    height: 220px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 10px;
+    width: 180px;
+    height: 180px;
   }
-  
+
   h1 {
     font-size: 2rem;
-    font-weight: bold;
   }
-  
+
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-  }
-  
+
   .social-icon {
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 1.8rem;
   }
-  
-  .social-icon:hover {
-    transform: scale(1.2);
-    color: #00ff00;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 10px;
   }
-  
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icon {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 5px;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icon {
+    font-size: 1.4rem;
+  }
+}

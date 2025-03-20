@@ -18,7 +18,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <section id="/" className="section-contact" data-aos="fade-up">
         <Hero/>
+        </section>
       <section id="about" className="section" data-aos="fade-up">
        <About/>
       </section>
