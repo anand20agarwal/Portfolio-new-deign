@@ -7,7 +7,7 @@ const projectsData = [
     image: "https://i.pinimg.com/736x/eb/0d/c4/eb0dc43bf2d59b460469bb4f85653931.jpg", // Replace with actual image path
     tags: ["React", "Node JS", "MongoDB", "Express JS"],
     description:
-      "A feature-rich Music Streaming Application offering seamless audio playback, personalized playlists, and an immersive listening experience...",
+      "A feature-rich music app with seamless playback, personalized playlists, and an immersive experience...",
     link: "https://music-web-application-2.onrender.com/", // Replace with actual URL
   },
   {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import "./css/Contact.css";
 
 const Contact = () => {
@@ -46,7 +46,7 @@ const Contact = () => {
           onMouseEnter={() => setHovered("phone")}
           onMouseLeave={() => setHovered(null)}
         >
-          <FaPhone className="icon" />
+          <FaPhoneAlt className="icon" />
           <span className={`contact-text ${hovered === "phone" ? "show" : ""}`}>
             8892145195
           </span>
