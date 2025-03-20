@@ -27,8 +27,9 @@ const App = () => {
         <Education />
       </section>
       <section id="projects" className="section" data-aos="fade-up">
-        <Projects/>
-      </section>
+  <Projects />
+</section>
+
 
       <section id="contact" className="section-contact" data-aos="fade-up">
         <Contact/>
