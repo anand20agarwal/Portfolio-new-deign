@@ -2,9 +2,9 @@
 .about-me {
     background-color: #000;
     color: white;
-    padding: 50px 10%;
+    /* padding: 50px 10%;   */
     display: flex;
-    justify-content: flex-start; /* Moves About section more to the left */
+    justify-content: flex-start;
     align-items: flex-start;
   }
   
@@ -16,6 +16,10 @@
     border: 2px solid #ff007f;
     box-shadow: 0 4px 15px rgba(255, 0, 127, 0.3);
     max-width: 700px;
+  }
+
+  a{
+    color: #ff007f;
   }
   
   /* Title */
@@ -32,7 +36,7 @@
     max-width: 900px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: #555;
+    color: white;
     line-height: 1.6;
   }
   
@@ -64,7 +68,8 @@
   }
   
   .achievement-card, .cert-card {
-    background: #121212;
+    background: white;
+    color: #121212;
     padding: 20px;
     border-radius: 12px;
     border: 2px solid #333;
@@ -126,7 +131,7 @@
     }
   
     .tech-icons-container {
-      margin-left: 0;
+      margin-left: 15px;
       width: 100%;
       margin-top: 20px;
     }
@@ -144,6 +149,6 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  color: white; /* Ensures text remains visible */
+  color: white; 
   font-family: Arial, sans-serif;
 }

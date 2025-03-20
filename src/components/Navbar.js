@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { HiX } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa"; // Download icon
+import { Link } from "react-scroll"; // Smooth scrolling
 import "./css/Navbar.css";
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
+  const [activeSection, setActiveSection] = useState("about"); // Default active link
 
   const handleToggle = () => {
     setToggleIcon(!toggleIcon);
@@ -12,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">MyPortfolio</div>
+      <div className="logo">Anand's Portfolio</div>
 
       {/* Mobile Toggle Button */}
       <div className="nav-icon" onClick={handleToggle}>
@@ -21,15 +24,55 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul className={`nav-links ${toggleIcon ? "active" : ""}`} onClick={handleToggle}>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <Link 
+            to="about" 
+            smooth={true} 
+            duration={500} 
+            className={activeSection === "about" ? "active" : ""}
+            onClick={() => setActiveSection("about")}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="education" 
+            smooth={true} 
+            duration={500} 
+            className={activeSection === "education" ? "active" : ""}
+            onClick={() => setActiveSection("education")}
+          >
+            Education
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="projects" 
+            smooth={true} 
+            duration={500} 
+            className={activeSection === "projects" ? "active" : ""}
+            onClick={() => setActiveSection("projects")}
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="contact" 
+            smooth={true} 
+            duration={500} 
+            className={activeSection === "contact" ? "active" : ""}
+            onClick={() => setActiveSection("contact")}
+          >
+            Contact
+          </Link>
+        </li>
         <li className="resume-item">
           <a href="https://drive.google.com/uc?export=download&id=1jy_oiO_UAx68NA-t9h2E1WV-3WcLhaIA" 
              className="resume-btn" 
              download="Anand_Agarwal_Resume.pdf">
-            Resume
+            <FaDownload className="download-icon" /> Resume
           </a>
         </li>
       </ul>
