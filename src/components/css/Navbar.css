@@ -76,7 +76,7 @@
     border-radius: 5px;
     border: 2px solid #ff007f;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     transition: background 0.3s ease, transform 0.3s ease;
     margin-right: 5rem;
     margin-top: -8px;
@@ -136,6 +136,6 @@
         justify-content: center;
         width: 140px;
         text-align: center;
-        margin: 20px auto;
+        margin: -30px auto;
     }
 }
