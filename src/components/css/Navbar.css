@@ -26,8 +26,8 @@
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* Navigation Links */
@@ -115,7 +115,7 @@
 
     .nav-links {
         position: absolute;
-        top: 26px;
+        top: 115px;
         right: -100%;
         width: 100%;
         background: black;
