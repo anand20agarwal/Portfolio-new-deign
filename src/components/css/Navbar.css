@@ -26,6 +26,8 @@
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Navigation Links */
