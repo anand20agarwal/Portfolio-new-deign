@@ -12,9 +12,6 @@ const About = () => {
         <p className="degree">
         "Hi, I'm Anand Agarwal, an MCA graduate from T John College passionate about frontend development. I specialize in React.js, creating modern, responsive interfaces. I enjoy coding challenges, improving my Java skills, and deploying projects on Render. Excited to collaborate and build innovative solutions!" 🚀
         </p>
-        <p className="intro">
-          I'm a Post undergrad with a passion for crafting dynamic web apps and diving deep into technology.
-        </p>
         <blockquote className="quote">
           <i>"I code, I solve, I innovate – and yes, I probably broke something along the way."</i>
         </blockquote>
