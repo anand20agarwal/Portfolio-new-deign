@@ -22,6 +22,16 @@ const Contact = () => {
         </a>
       </button>
 
+      {/* Call Button */}
+      {/* <button className="contact-button">
+        <a
+          href="tel:8892145195"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          Call Now
+        </a>
+      </button> */}
+
       <div className="contact-icons">
         {/* Email Icon */}
         <div
@@ -65,7 +75,9 @@ const Contact = () => {
           onMouseEnter={() => setHovered("phone")}
           onMouseLeave={() => setHovered(null)}
         >
-          <FaPhoneAlt className="icon" />
+          <a href="tel:8892145195">
+            <FaPhoneAlt className="icon" />
+          </a>
           <span className={`contact-text ${hovered === "phone" ? "show" : ""}`}>
             8892145195
           </span>
