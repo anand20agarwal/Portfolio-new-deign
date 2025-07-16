@@ -7,17 +7,8 @@ const Contact = () => {
 
   // Define your email with subject and body
   const email = "agarwal.anand1802@gmail.com";
-  const subject = encodeURIComponent("Internship Application at iFocus Sytec");
-  const body = encodeURIComponent(
-    `Dear Avinash,
 
-I am writing to express my keen interest in the internship opportunity at iFocus Sytec. I am eager to learn, contribute, and grow with your team.
-
-Looking forward to hearing from you.
-
-Best regards,
-Anand Agarwal`
-  );
+  
 
   const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
 
