@@ -15,7 +15,7 @@ const Contact = () => {
       {/* Email Button */}
       <button className="contact-button">
         <a
-          href="mailto:anandagarwaljob@gmail.com"
+          href="mailto:agarwal.anand1802@gmail.com"
           style={{ textDecoration: "none", color: "inherit" }}
         >
           Reach Out
@@ -39,11 +39,11 @@ const Contact = () => {
           onMouseEnter={() => setHovered("email")}
           onMouseLeave={() => setHovered(null)}
         >
-          <a href="mailto:anandagarwaljob@gmail.com">
+          <a href="mailto:agarwal.anand1802@gmail.com">
             <FaEnvelope className="icon" />
           </a>
           <span className={`contact-text ${hovered === "email" ? "show" : ""}`}>
-            anandagarwaljob@gmail.com
+            agarwal.anand1802@gmail.com
           </span>
         </div>
 
