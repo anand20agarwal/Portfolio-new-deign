@@ -15,7 +15,7 @@ const Contact = () => {
       {/* Email Button */}
       <button className="contact-button">
         <a
-          href="mailto:anandagarwaljob@gmail.com"
+          href="mailto:agarwal.anand1802@gmail.com"
           style={{ textDecoration: "none", color: "inherit" }}
         >
           Reach Out
