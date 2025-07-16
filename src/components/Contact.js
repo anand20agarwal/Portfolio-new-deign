@@ -5,41 +5,24 @@ import "./css/Contact.css";
 const Contact = () => {
   const [hovered, setHovered] = useState(null);
 
-  // Your pre-filled email content
-  const email = "agarwal.anand1802@gmail.com";
-  const subject = encodeURIComponent("Internship Application at iFocus Sytec");
-  const body = encodeURIComponent(
-    `Dear Avinash,
-
-I am writing to express my keen interest in the internship opportunity at iFocus Sytec. I am eager to learn, contribute, and grow with your team.
-
-Looking forward to hearing from you.
-
-Best regards,
-Anand Agarwal`
-  );
-
-  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
-
   return (
     <section className="contact-section">
       <h1 className="contact-title">Get In Touch</h1>
       <p className="contact-subtitle">
-        "Whether it’s about a project, an opportunity, or just to say hello—I'd
-        love to hear from you! Let’s create something amazing together."
+        "Whether it’s about a project, an opportunity, or just to say hello—I'd love to hear from you! Let’s create something amazing together."
       </p>
 
       {/* Email Button */}
       <button className="contact-button">
         <a
-          href={mailtoLink}
+          href="mailto:agarwal.anand1802@gmail.com"
           style={{ textDecoration: "none", color: "inherit" }}
         >
           Reach Out
         </a>
       </button>
 
-      {/* Call Button (optional) */}
+      {/* Call Button */}
       {/* <button className="contact-button">
         <a
           href="tel:8892145195"
@@ -56,13 +39,11 @@ Anand Agarwal`
           onMouseEnter={() => setHovered("email")}
           onMouseLeave={() => setHovered(null)}
         >
-          <a href={mailtoLink}>
+          <a href="mailto:agarwal.anand1802@gmail.com">
             <FaEnvelope className="icon" />
           </a>
-          <span
-            className={`contact-text ${hovered === "email" ? "show" : ""}`}
-          >
-            {email}
+          <span className={contact-text ${hovered === "email" ? "show" : ""}}>
+            agarwal.anand1802@gmail.com
           </span>
         </div>
 
@@ -97,9 +78,7 @@ Anand Agarwal`
           <a href="tel:8892145195">
             <FaPhoneAlt className="icon" />
           </a>
-          <span
-            className={`contact-text ${hovered === "phone" ? "show" : ""}`}
-          >
+          <span className={contact-text ${hovered === "phone" ? "show" : ""}}>
             8892145195
           </span>
         </div>
