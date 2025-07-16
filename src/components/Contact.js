@@ -10,7 +10,7 @@ const Contact = () => {
 
   
 
-  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+  const mailtoLink = `mailto:${email}`;
 
   return (
     <section className="contact-section">
