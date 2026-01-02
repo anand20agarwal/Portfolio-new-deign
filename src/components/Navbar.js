@@ -29,6 +29,7 @@ const Navbar = () => {
         {[
           { to: "about", label: "About" },
           { to: "education", label: "Education" },
+          { to: "experience", label: "Experience" },
           { to: "projects", label: "Projects" },
           { to: "contact", label: "Contact" },
         ].map(({ to, label }) => (
