@@ -1,0 +1,179 @@
+.education-section {
+    /* padding: 50px 10px; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Education Title */
+  .education-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Timeline Container */
+  .education-timeline {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Center Timeline Line */
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background: #ff007f;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  /* Education Card Styling */
+  .education-container {
+    position: relative;
+    width: 45%;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Left Side Cards */
+  .left {
+    left: 0;
+    text-align: right;
+    transform: translateX(-10%);
+  }
+  
+  /* Right Side Cards */
+  .right {
+    left: 55%;
+    text-align: left;
+    transform: translateX(10%);
+  }
+  
+  /* Graduation Cap Icon on Timeline */
+  .education-icon {
+    font-size: 24px;
+    background: #ff007f;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  /* Position Icon Between Cards */
+  .education-container:nth-child(odd) .education-icon {
+    top: -25px;
+  }
+  
+  .education-container:nth-child(even) .education-icon {
+    top: -25px;
+  }
+  
+  /* Timeline Direction Arrows */
+  .timeline-arrow {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateY(-50%);
+  }
+  
+  /* Left Side Arrow (Pointing Right) */
+  .left .timeline-arrow {
+    left: 100%;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #ff007f;
+  }
+  
+  /* Right Side Arrow (Pointing Left) */
+  .right .timeline-arrow {
+    right: 100%;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #ff007f transparent transparent;
+  }
+  
+  /* Content Styling */
+  .education-content {
+    padding: 10px 20px;
+  }
+  
+  .edu-duration {
+    font-weight: bold;
+    color: #ff007f;
+  }
+  
+  /* ========== Responsive Design ========== */
+  
+  /* Tablet Screens (max-width: 1024px) */
+  @media screen and (max-width: 1024px) {
+    .education-container {
+      width: 80%;
+    }
+    
+    .left, .right {
+      left: 10%;
+      transform: none;
+      text-align: center;
+    }
+    
+    .timeline-line {
+      left: 20px;
+    }
+  
+    .education-icon {
+      left: 20px;
+      transform: none;
+    }
+  
+    .timeline-arrow {
+      display: none;
+    }
+  }
+  
+  /* Mobile Screens (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .education-timeline {
+      width: 100%;
+    }
+  
+    .education-container {
+      width: 90%;
+      left: 0;
+      text-align: center;
+    }
+  
+    .timeline-line {
+      display: none; /* Hide vertical line on mobile */
+    }
+  
+    .education-icon {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -25px;
+    }
+  
+    .timeline-arrow {
+      display: none;
+    }
+  }
+  

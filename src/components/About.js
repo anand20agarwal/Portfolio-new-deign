@@ -10,7 +10,7 @@ const About = () => {
       <div className="about-container">
         <h1>About Me</h1>
         <p className="degree">
-        "Hi, I'm Anand Agarwal, an MCA graduate from T John College passionate about frontend development. I specialize in React.js, creating modern, responsive interfaces. I enjoy coding challenges, improving my Java skills, and deploying projects on Render. Excited to collaborate and build innovative solutions!" 🚀
+        "MCA graduate from T John College with hands-on experience in frontend development using React.js and in building real-world web applications. Experienced in developing responsive, user-centric interfaces, implementing authentication workflows, and delivering production-ready features. Skilled in Java, problem-solving, and deploying applications on platforms like Render, with a strong ability to collaborate with stakeholders and translate requirements into functional solutions." 🚀
         </p>
         <blockquote className="quote">
           <i>"I code, I solve, I innovate – and yes, I probably broke something along the way."</i>
@@ -45,7 +45,7 @@ const About = () => {
 
           <div className="cert-card">
             <h3>Python</h3>
-            <p>Python in AI</p>
+            <p>Python</p>
             {/* <a href="#">Click to know more</a> */}
           </div>
 
